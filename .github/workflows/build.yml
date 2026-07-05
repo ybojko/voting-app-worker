@@ -14,7 +14,6 @@ jobs:
   build:
     uses: ybojko/voting-app-ci/.github/workflows/build.yml@master
     permissions:
-      id-token: write
       contents: read
     with:
       service-name: worker
