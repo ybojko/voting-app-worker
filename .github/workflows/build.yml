@@ -12,11 +12,11 @@ on:
 
 jobs:
   build:
-    uses: ybojko/voting-app-ci/.github/workflows/build.yml@master
+    uses: ybojko/voting-app-ci/.github/workflows/build.yml@main
     permissions:
       contents: read
     with:
-      service-name: worker
+      image_name: worker
       context: .
       platforms: linux/amd64,linux/arm64
     secrets:
