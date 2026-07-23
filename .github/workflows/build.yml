@@ -3,12 +3,12 @@ name: Build Worker
 on:
   push:
     branches:
-      - master
+      - main
     paths:
       - "**"
   pull_request:
     branches:
-      - master
+      - main
 
 jobs:
   build:
