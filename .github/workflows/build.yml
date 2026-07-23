@@ -3,16 +3,16 @@ name: Build Worker
 on:
   push:
     branches:
-      - main
+      - master
     paths:
       - "**"
   pull_request:
     branches:
-      - main
+      - master
 
 jobs:
   build:
-    uses: ybojko/voting-app-ci/.github/workflows/build.yml@main
+    uses: ybojko/voting-app-ci/.github/workflows/build.yml@master
     permissions:
       contents: read
     with:
