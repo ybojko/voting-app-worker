@@ -23,3 +23,4 @@ jobs:
       platforms: linux/amd64,linux/arm64
     secrets:
       GIT_OPS_TOKEN: ${{ secrets.GIT_OPS_TOKEN }}
+      GHCR_TOKEN: ${{ secrets.GIT_OPS_TOKEN }}
